@@ -1,5 +1,24 @@
 {
   "name": "@tss/game",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tss/shared": "workspace:*",
+    "i18next": "^27.2.2",
+    "phaser": "4.2.1"
+  },
+  "devDependencies": {
+    "@tss/config": "workspace:*",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vite": "^8.3.8"
+  }
 }
