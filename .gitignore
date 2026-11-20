@@ -1,10 +1,41 @@
+# Dependencies
 node_modules/
+
+# Build outputs and caches
 dist/
 coverage/
 .turbo/
-*.log
+.vite/
+*.tsbuildinfo
+
+# Secrets — only .env.example is committed
 .env
 .env.*
 !.env.example
-.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test and quality tools
+test-results/
+playwright-report/
+blob-report/
+.lighthouseci/
+.scannerwork/
+
+# Editors (shared VS Code settings stay committed)
 .idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Art tools backups (Krita)
+*.kra~
