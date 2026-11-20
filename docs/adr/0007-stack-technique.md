@@ -1,6 +1,6 @@
-# ADR-007 — Stack technique : Phaser 4 + Spine, NestJS
+# ADR-007 - Stack technique : Phaser 4 + Spine, NestJS
 
-- **Statut** : Acceptée
+- **Statut** : acceptée - partie animation (Spine) remplacée par [ADR-0017](0017-animation-en-morceaux.md)
 - **Date** : 2026-11-19
 - **Décideur** : Thibault (PO)
 - **Ticket** : TSS-13
