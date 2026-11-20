@@ -1,9 +1,8 @@
 packages:
-  - 'apps/*'
-  - 'packages/*'
+  - apps/*
+  - packages/*
 
-# Shared dependency versions (use "catalog:" in package.json)
 catalog:
-  typescript: ~6.0.3
   eslint: ^10.15.0
   prettier: ^3.10.1
+  typescript: ~6.0.3
