@@ -1,1 +1,5 @@
-{ "name": "@tss/content", "version": "0.0.0", "private": true }
+{
+  "name": "@tss/content",
+  "version": "0.0.0",
+  "private": true
+}

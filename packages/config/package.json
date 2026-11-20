@@ -1,1 +1,25 @@
-{ "name": "@tss/config", "version": "0.0.0", "private": true, "files": ["tsconfig.base.json"] }
+{
+  "name": "@tss/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./eslint": "./eslint/index.js"
+  },
+  "files": [
+    "tsconfig.base.json",
+    "eslint"
+  ],
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "typescript-eslint": "^8.73.0"
+  },
+  "devDependencies": {
+    "eslint": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  }
+}
