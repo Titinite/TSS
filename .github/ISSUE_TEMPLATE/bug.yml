@@ -1,0 +1,48 @@
+name: Bug
+description: Signaler un comportement anormal du jeu
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Que se passe-t-il ?
+      description: Décris le problème en quelques phrases.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. Aller dans…
+        2. Cliquer sur…
+        3. Voir l'erreur
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Appareil
+      options:
+        - PC
+        - Mobile Android
+        - Mobile iOS
+        - Tablette
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Navigateur et version
+      placeholder: Chrome 142, Safari 19…
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Captures ou vidéo

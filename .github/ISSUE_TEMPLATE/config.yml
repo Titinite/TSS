@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Suivi du projet (Jira)
+    url: https://titinite.atlassian.net/jira/software/projects/TSS/boards/1
+    about: Le travail planifié est suivi dans Jira. Les issues GitHub servent aux retours externes.
