@@ -136,8 +136,11 @@ jobs:
   sonar:
     name: SonarQube Cloud
     needs: test
-    # Dependabot PRs have no access to secrets
-    if: github.actor != 'dependabot[bot]'
+    # Free plan: only the main branch (develop) and PRs into it can be analysed
+    if: >-
+      github.actor != 'dependabot[bot]' &&
+      ((github.event_name == 'push' && github.ref == 'refs/heads/develop') ||
+       (github.event_name == 'pull_request' && github.base_ref == 'develop'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
