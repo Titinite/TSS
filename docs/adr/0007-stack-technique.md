@@ -12,14 +12,14 @@ Les personnages ont de nombreuses animations et cosmétiques (ADR-002) : une ani
 
 ## Options étudiées
 
-| Option | Résultat |
-|---|---|
-| Phaser 3 + DragonBones | **Rejetée** : le runtime officiel (v5.6.2, 2018) plante sur Phaser 3.90 (`TextureTintPipeline` supprimé depuis Phaser 3.50). Aucun runtime maintenu |
-| Phaser 3.24 + DragonBones | **Rejetée** : moteur de 2020, plus maintenu |
-| Patcher le runtime DragonBones | **Rejetée** : fork à maintenir seul jusqu'au lancement |
-| PixiJS + DragonBones | **Rejetée** : moteur de rendu seulement (pas de scènes, loader, tweens, entrées) |
-| Phaser 4 + images par image | **Rejetée** : chaque cosmétique impose de redessiner toutes les animations |
-| **Phaser 4 + Spine** | **Retenue** |
+| Option                         | Résultat                                                                                                                                            |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Phaser 3 + DragonBones         | **Rejetée** : le runtime officiel (v5.6.2, 2018) plante sur Phaser 3.90 (`TextureTintPipeline` supprimé depuis Phaser 3.50). Aucun runtime maintenu |
+| Phaser 3.24 + DragonBones      | **Rejetée** : moteur de 2020, plus maintenu                                                                                                         |
+| Patcher le runtime DragonBones | **Rejetée** : fork à maintenir seul jusqu'au lancement                                                                                              |
+| PixiJS + DragonBones           | **Rejetée** : moteur de rendu seulement (pas de scènes, loader, tweens, entrées)                                                                    |
+| Phaser 4 + images par image    | **Rejetée** : chaque cosmétique impose de redessiner toutes les animations                                                                          |
+| **Phaser 4 + Spine**           | **Retenue**                                                                                                                                         |
 
 ## Décision
 
